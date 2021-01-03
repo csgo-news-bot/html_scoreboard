@@ -1,0 +1,20 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "export NODE_ENV=development && webpack-dev-server --mode development --open",
+    "build": "export NODE_ENV=production && webpack --mode production"
+  },
+  "devDependencies": {
+    "@neutrinojs/web": "^9.5.0",
+    "neutrino": "^9.5.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^4.1.0",
+    "sass-loader": "^10.1.0",
+    "webpack": "^4",
+    "webpack-cli": "^3",
+    "webpack-dev-server": "^3"
+  }
+}
