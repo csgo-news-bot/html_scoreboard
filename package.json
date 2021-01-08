@@ -5,7 +5,6 @@
   "license": "MIT",
   "scripts": {
     "start": "export NODE_ENV=development && webpack-dev-server --mode development --open",
-    "serve": "node server.js",
     "build": "export NODE_ENV=production && webpack --mode production"
   },
   "devDependencies": {
