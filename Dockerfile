@@ -1,14 +1,11 @@
-FROM python:3.8.7-slim
+FROM node:12
 
-ARG APP_PATH=/home/app
-RUN mkdir -p ${APP_PATH}
-COPY . ${APP_PATH}
-WORKDIR ${APP_PATH}
+WORKDIR /usr/src/app
 
-RUN pip install pipenv
-RUN pipenv install --deploy --system --ignore-pipfile
+COPY . .
 
-RUN apt update -y -qq
-RUN apt install wkhtmltopdf -y -qq
+RUN npm install
 
-CMD ["python", "main.py"]
+EXPOSE 3000
+
+CMD [ "npm run serve" ]
