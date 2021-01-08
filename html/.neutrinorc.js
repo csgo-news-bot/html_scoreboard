@@ -6,7 +6,7 @@ module.exports = {
   },
   use: [
     web({
-      publicPath: process.env.NODE_ENV === 'production' ? '/home/app/html/build/' : '',
+      publicPath: '/',
       html: {
         title: 'html'
       },
