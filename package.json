@@ -7,18 +7,24 @@
     "start": "export NODE_ENV=development && webpack-dev-server --mode development --open",
     "build": "export NODE_ENV=production && webpack --mode production"
   },
-  "devDependencies": {
-    "@neutrinojs/web": "^9.5.0",
-    "neutrino": "^9.5.0",
-    "node-sass": "^5.0.0",
-    "postcss-loader": "^4.1.0",
-    "sass-loader": "^10.1.0",
-    "webpack": "^4",
-    "webpack-cli": "^3",
-    "webpack-dev-server": "^3"
-  },
   "dependencies": {
+    "prop-types": "^15",
+    "react": "^16",
+    "react-dom": "^16",
+    "react-hot-loader": "^4",
     "connect": "^3.7.0",
     "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "@neutrinojs/airbnb": "^9.5.0",
+    "@neutrinojs/react": "^9.5.0",
+    "eslint": "^7",
+    "neutrino": "^9.5.0",
+    "webpack": "^4",
+    "webpack-cli": "^3",
+    "webpack-dev-server": "^3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "postcss-loader": "^4.1.0"
   }
 }

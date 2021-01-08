@@ -1,11 +1,13 @@
-const web = require('@neutrinojs/web');
+const react = require('@neutrinojs/react');
+const airbnb = require('@neutrinojs/airbnb');
 
 module.exports = {
   options: {
     root: __dirname,
   },
   use: [
-    web({
+    airbnb(),
+    react({
       publicPath: '/',
       html: {
         title: 'html'
