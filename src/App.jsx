@@ -16,9 +16,9 @@ const teamLoseName = 'Virtus PRO';
 const teamWonScore = 16;
 const teamLoseScore = 14;
 const matchType = 'bo1';
-const eventLogoUrl = 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/2c/NAVI_logo.png/1200px-NAVI_logo.png';
-const teamWonLogoUrl = 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/2c/NAVI_logo.png/1200px-NAVI_logo.png';
-const teamLoseLogoUrl = 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/2c/NAVI_logo.png/1200px-NAVI_logo.png';
+const eventLogoUrl = 'https://storage.googleapis.com/csgo_global_elite/team/natus_vincere.png';
+const teamWonLogoUrl = 'https://storage.googleapis.com/csgo_global_elite/team/natus_vincere.png';
+const teamLoseLogoUrl = 'https://storage.googleapis.com/csgo_global_elite/team/natus_vincere.png';
 
 const eventLogoStyle = {
   backgroundImage: `url(${eventLogoUrl})`,
