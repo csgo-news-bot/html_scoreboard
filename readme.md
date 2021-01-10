@@ -7,3 +7,5 @@ Params:
 * team_won_score = 1
 * team_lose_score = 1
 * match_type = bo3
+* team_won_logo_url = url/to/png/image
+* team_lose_logo_url = url/to/png/image
