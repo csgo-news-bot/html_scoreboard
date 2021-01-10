@@ -3,14 +3,18 @@ import React from 'react';
 import styles from './assets/css/index.module.scss';
 
 const urlParams = new URLSearchParams(window.location.search);
-const championshipName = urlParams.get('championship_name');
-const teamWonName = urlParams.get('team_won_name');
-const teamLoseName = urlParams.get('team_lose_name');
-const teamWonScore = urlParams.get('team_won_score');
-const teamLoseScore = urlParams.get('team_lose_score');
-const matchType = urlParams.get('match_type');
-const teamWonLogoUrl = urlParams.get('team_won_logo_url');
-const teamLoseLogoUrl = urlParams.get('team_lose_logo_url');
+
+function getParam(key, defaultValue = '') {
+  return urlParams.has(key) ? urlParams.get(key) : defaultValue;
+}
+const championshipName = getParam('championship_name', 'eXTREMESLAND 2020 Southeast Asia');
+const teamWonName = getParam('team_won_name', 'Beyond');
+const teamLoseName = getParam('team_lose_name', 'Paper Rex');
+const teamWonScore = getParam('team_won_score', 2);
+const teamLoseScore = getParam('team_lose_score', 1);
+const matchType = getParam('match_type', 'bo3');
+const teamWonLogoUrl = getParam('team_won_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/beyond.png');
+const teamLoseLogoUrl = getParam('team_lose_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/paper_rex.png');
 
 const teamWonLogoStyle = {
   backgroundImage: `url(${teamWonLogoUrl})`,
