@@ -33,22 +33,15 @@ body {
     width: 380px;
     height: 100px;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0;
     grid-template-rows: 1fr;
     margin: 0 auto;
+    text-align: center;
 
     .event_name {
       padding: 25px 0;
-    }
-
-    .event_logo {
-      width: 100%;
-      height: 100px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
     }
   }
   .mid {
