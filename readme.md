@@ -9,3 +9,5 @@ Params:
 * match_type = bo3
 * team_won_logo_url = url/to/png/image
 * team_lose_logo_url = url/to/png/image
+* team_won_flag_url = url/to/png/image
+* team_lose_flag_url = url/to/png/image

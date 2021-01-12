@@ -15,12 +15,20 @@ const teamLoseScore = getParam('team_lose_score', 1);
 const matchType = getParam('match_type', 'bo3');
 const teamWonLogoUrl = getParam('team_won_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/beyond.png');
 const teamLoseLogoUrl = getParam('team_lose_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/paper_rex.png');
+const teamWonFlagUrl = getParam('team_won_flag_url', 'https://storage.googleapis.com/csgo_global_elite/country/russia.png');
+const teamLoseFlagUrl = getParam('team_lose_flag_url', 'https://storage.googleapis.com/csgo_global_elite/country/belgium.png');
 
 const teamWonLogoStyle = {
   backgroundImage: `url(${teamWonLogoUrl})`,
 };
 const teamLoseLogoStyle = {
   backgroundImage: `url(${teamLoseLogoUrl})`,
+};
+const teamWonFlagStyle = {
+  backgroundImage: `url(${teamWonFlagUrl})`,
+};
+const teamLoseFlagStyle = {
+  backgroundImage: `url(${teamLoseFlagUrl})`,
 };
 
 const App = () => (
@@ -34,7 +42,8 @@ const App = () => (
       <div className={styles.team}>
         <div className={styles.team_logo} style={teamWonLogoStyle} />
         <div className={styles.team_name}>
-          {teamWonName.toUpperCase()}
+          <div className={styles.team_flag} style={teamWonFlagStyle} />
+          <div className={styles.team_name_wrap}>{teamWonName.toUpperCase()}</div>
         </div>
       </div>
       <div className={styles.score}>
@@ -52,7 +61,8 @@ const App = () => (
       <div className={styles.team}>
         <div className={styles.team_logo} style={teamLoseLogoStyle} />
         <div className={styles.team_name}>
-          {teamLoseName.toUpperCase()}
+          <div className={styles.team_flag} style={teamLoseFlagStyle} />
+          <div className={styles.team_name_wrap}>{teamLoseName.toUpperCase()}</div>
         </div>
       </div>
     </div>

@@ -80,8 +80,23 @@ body {
         filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white);
       }
       .team_name {
-        text-align: center;
         font-size: var(--pre-high-font-size);
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        grid-column-gap: 15px;
+        justify-self: center;
+        .team_flag {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 30px;
+          width: 44px;
+        }
+        .team_name_wrap {
+          display: flex;
+          width: max-content;
+          line-height: 0.9;
+        }
       }
     }
   }
