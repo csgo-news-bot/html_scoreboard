@@ -1,4 +1,4 @@
-## It generate image for csgo matches by get params
+## It generate image for csgo matches by get params 
 
 Params:
 * team_won_name = Fnatic
