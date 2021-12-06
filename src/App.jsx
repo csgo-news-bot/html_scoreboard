@@ -7,16 +7,18 @@ const urlParams = new URLSearchParams(window.location.search);
 function getParam(key, defaultValue = '') {
   return urlParams.has(key) ? urlParams.get(key) : defaultValue;
 }
+const FILE_STORAGE = 'https://storage.romua1d.ru/csgobot/';
+
 const championshipName = getParam('championship_name', 'eXTREMESLAND 2020 Southeast Asia');
 const teamWonName = getParam('team_won_name', 'Beyond');
 const teamLoseName = getParam('team_lose_name', 'Paper Rex');
 const teamWonScore = getParam('team_won_score', 2);
 const teamLoseScore = getParam('team_lose_score', 1);
 const matchType = getParam('match_type', 'bo3');
-const teamWonLogoUrl = getParam('team_won_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/beyond.png');
-const teamLoseLogoUrl = getParam('team_lose_logo_url', 'https://storage.googleapis.com/csgo_global_elite/team/paper_rex.png');
-const teamWonFlagUrl = getParam('team_won_flag_url', 'https://storage.googleapis.com/csgo_global_elite/country/russia.png');
-const teamLoseFlagUrl = getParam('team_lose_flag_url', 'https://storage.googleapis.com/csgo_global_elite/country/belgium.png');
+const teamWonLogoUrl = getParam('team_won_logo_url', `${FILE_STORAGE}/team/beyond.png`);
+const teamLoseLogoUrl = getParam('team_lose_logo_url', `${FILE_STORAGE}/team/paper_rex.png`);
+const teamWonFlagUrl = getParam('team_won_flag_url', `${FILE_STORAGE}/country/russia.png`);
+const teamLoseFlagUrl = getParam('team_lose_flag_url', `${FILE_STORAGE}/country/belgium.png`);
 
 const teamWonLogoStyle = {
   backgroundImage: `url(${teamWonLogoUrl})`,

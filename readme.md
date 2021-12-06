@@ -1,5 +1,9 @@
 ## It generate image for csgo matches by get params 
 
+Example: 
+
+`localhost:3000?team_won_logo_url=https://storage.romua1d.ru/csgobot/team/ecstatic.svg`
+
 Params:
 * team_won_name = Fnatic
 * team_lose_name = NaVi
