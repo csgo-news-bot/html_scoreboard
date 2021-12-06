@@ -14,5 +14,4 @@ connect()
     maxAge: '1d',
     setHeaders: setCustomCacheControl,
   })
-  .listen(4000, () => console.log('Server running on 4000...'));
-
+  .listen(3000, () => console.log('Server running on 4000...'));
