@@ -7,7 +7,7 @@ const urlParams = new URLSearchParams(window.location.search);
 function getParam(key, defaultValue = '') {
   return urlParams.has(key) ? urlParams.get(key) : defaultValue;
 }
-const FILE_STORAGE = 'https://storage.romua1d.ru/csgobot/';
+const FILE_STORAGE = 'https://storage.web7.pro/csgobot/';
 
 const championshipName = getParam('championship_name', 'eXTREMESLAND 2020 Southeast Asia');
 const teamWonName = getParam('team_won_name', 'Beyond');
